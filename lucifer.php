@@ -21,11 +21,13 @@ $validationResult['line_type'];
 
 if($phone_number)
 {
+ echo'------------------------------------';
  echo "Carrier:". ' '.$validationResult['carrier']."\n";
  echo "Country Code:". ' ' .$validationResult['country_code']."\n";
  echo "Location:". ' ' .$validationResult['location']."\n";
  echo "Country Name:". ' ' .$validationResult['country_name']."\n";
  echo "Line Type:". ' ' .$validationResult['line_type']."\n";
+ echo'------------------------------------';
 }
 
 ?>
