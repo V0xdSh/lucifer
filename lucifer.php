@@ -3,8 +3,8 @@
 $api = 'ee0e3fccaa1d5de92490d1ca9e91aa6c';
 
 $phone_number = readline("[-] Enter Phone Number [+] : ");
-print "collecting information in progress"."\n";
-sleep(3);
+print "collecting information in progress...."."\n";
+sleep(5);
 
 $ch = curl_init('http://apilayer.net/api/validate?access_key='.$api.'&number='.$phone_number.'');  
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -21,13 +21,11 @@ $validationResult['line_type'];
 
 if($phone_number)
 {
- echo'------------------------------------';
  echo "Carrier:". ' '.$validationResult['carrier']."\n";
  echo "Country Code:". ' ' .$validationResult['country_code']."\n";
  echo "Location:". ' ' .$validationResult['location']."\n";
  echo "Country Name:". ' ' .$validationResult['country_name']."\n";
  echo "Line Type:". ' ' .$validationResult['line_type']."\n";
- echo'------------------------------------';
 }
 
 ?>
