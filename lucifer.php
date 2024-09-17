@@ -1,7 +1,5 @@
 <?php
 
-$api = 'ee0e3fccaa1d5de92490d1ca9e91aa6c';
-
 $phone_number = readline("[-] Enter Phone Number [+] : ");
 print "collecting information in progress...."."\n";
 sleep(5);
